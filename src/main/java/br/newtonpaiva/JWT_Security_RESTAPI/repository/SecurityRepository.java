@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SecurityRepository extends MongoRepository<LoginRequest, String> {
     LoginRequest findByUsername(String username);
+
 }

@@ -44,4 +44,26 @@ public class AuthService {
     public LoginRequest findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
+
+    public boolean updateUser(String id, LoginRequest updatedUser) {
+        LoginRequest existingUser = userRepository.findById(id).orElse(null);
+        if (existingUser != null) {
+            existingUser.setUsername(updatedUser.getUsername());
+            if (updatedUser.getPassword() != null) {
+                existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+            }
+            existingUser.setRole(updatedUser.getRole());
+            userRepository.save(existingUser);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean deleteUser(String id) {
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
 }

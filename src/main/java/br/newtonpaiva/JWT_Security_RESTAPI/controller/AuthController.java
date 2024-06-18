@@ -36,4 +36,22 @@ public class AuthController {
         }
         return ResponseEntity.status(404).body("User not found");
     }
+
+    @PutMapping("/edit/{id}")
+    public ResponseEntity<?> editUser(@PathVariable String id, @RequestBody LoginRequest user) {
+        boolean isUpdated = authService.updateUser(id, user);
+        if (isUpdated) {
+            return ResponseEntity.ok("User updated successfully");
+        }
+        return ResponseEntity.status(404).body("User not found");
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable String id) {
+        boolean isDeleted = authService.deleteUser(id);
+        if (isDeleted) {
+            return ResponseEntity.ok("User deleted successfully");
+        }
+        return ResponseEntity.status(404).body("User not found");
+    }
 }

@@ -24,6 +24,8 @@ public class AuthConfig {
                         .antMatchers(HttpMethod.GET, "/auth/username/**").permitAll()
                         .antMatchers(HttpMethod.GET, "/auth/user/**").permitAll()
                         .antMatchers("/auth/admin/**").hasRole("ADMIN")
+                        .antMatchers(HttpMethod.PUT, "/auth/edit/**").hasRole("ADMIN")
+                        .antMatchers(HttpMethod.DELETE, "/auth/delete/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .httpBasic();
