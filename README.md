@@ -45,7 +45,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 Interface: SecurityRepository
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="800px" height="500px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="800px" height="600px"/>
 
 <h2>5. JwtFilter</h2> 
 <p>Filtro JWT para interceptar requisições HTTP e validar tokens JWT.</p> 
@@ -93,8 +93,6 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Descrição: Registra um novo usuário.</li>
 </ul>
 <img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="800px" height="600px"/>
-
-
 <h3>Login</h3>
 <ul>
   <li>Método: POST</li>
@@ -102,6 +100,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Autentica um usuário e retorna um token JWT.</li>
 </ul>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Login.png?raw=true" width="800px" height="600px"/>
 <h3>Obter Usuário por Username</h3>
 <ul>
   <li>Método: GET</li>
@@ -109,6 +108,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Retorna os detalhes de um usuário pelo username.</li>
 </ul>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Username.png?raw=true" width="800px" height="600px"/>
 <h3>Editar Usuário</h3>
 <p>Para essa rota é necessário entrar na aba de Auth types do insomnia e selecionar API key </p>
 <ul>
@@ -117,6 +117,22 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Admin</li>
   <li>Descrição: Edita os detalhes de um usuário.</li>
 </ul>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Username.png?raw=true" width="800px" height="600px"/>
+<h3>Deletar Usuário</h3>
+<p>Para essa rota é necessário entrar na aba de Auth types do insomnia e selecionar API key </p>
+<ul>
+  <li>Método: DELETE</li>
+  <li>URL: http://localhost:8080/auth/delete/{id}</li>
+  <li>Permissões: Admin</li>
+  <li>Descrição: Deleta um usuário pelo ID.</li>
+</ul>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Delete.png?raw=true" width="800px" height="600px"/>
+
+
+Restrições de Roles
+ADMIN: Tem acesso a todas as rotas, incluindo edição (/auth/edit/{id}) e exclusão (/auth/delete/{id}) de usuários.
+USER: Acesso limitado apenas às rotas públicas e suas próprias informações.
+
 
 
 
