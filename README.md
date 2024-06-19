@@ -117,7 +117,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Admin</li>
   <li>Descrição: Edita os detalhes de um usuário.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Username.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Edit.png?raw=true" width="800px" height="600px"/>
 <h3>Deletar Usuário</h3>
 <p>Para essa rota é necessário entrar na aba de Auth types do insomnia e selecionar API key </p>
 <ul>
