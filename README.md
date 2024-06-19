@@ -83,10 +83,33 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 <h3>Registro de Usuário</h3>
 <ul>
   <li>Método: POST</li>
-  <li>URL: https/auth/register</li>
+  <li>URL: http://localhost:8080/auth/register</li>
   <li>Permissões: Público</li>
   <li>Descrição: Registra um novo usuário.</li>
 </ul>
+<h3>Login</h3>
+<ul>
+  <li>Método: POST</li>
+  <li>URL: http://localhost:8080/auth/login</li>
+  <li>Permissões: Público</li>
+  <li>Descrição: Autentica um usuário e retorna um token JWT.</li>
+</ul>
+<h3>Obter Usuário por Username</h3>
+<ul>
+  <li>Método: GET</li>
+  <li>URL: http://localhost:8080/auth/user/{username}</li>
+  <li>Permissões: Público</li>
+  <li>Descrição: Retorna os detalhes de um usuário pelo username.</li>
+</ul>
+<h3>Editar Usuário</h3>
+<p>Para essa rota é necessário </p>
+<ul>
+  <li>Método: PUT</li>
+  <li>URL: http://localhost:8080/auth/edit/{id}</li>
+  <li>Permissões: Admin</li>
+  <li>Descrição: Edita os detalhes de um usuário.</li>
+</ul>
+
 
 
 
