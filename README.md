@@ -127,7 +127,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Admin</li>
   <li>Descrição: Deleta um usuário pelo ID.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Delete.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Captura%20de%20tela%202024-06-19%20165946.png?raw=true" width="800px" height="260px"/>
 
 
 Restrições de Roles
