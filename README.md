@@ -10,7 +10,7 @@
 Classe: AuthConfig
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.config
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/AuthCOnfig.png?raw=true" width="300px" height="300px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/AuthCOnfig.png?raw=true" width="800px" height="600px"/>
 <h2>Principais Métodos:</h2>
   <ul>
     <li>securityFilterChain(HttpSecurity http): Configura a segurança HTTP, definindo as permissões das rotas.</li>
