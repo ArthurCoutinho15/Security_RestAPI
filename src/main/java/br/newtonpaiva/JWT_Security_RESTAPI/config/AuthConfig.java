@@ -1,8 +1,11 @@
 package br.newtonpaiva.JWT_Security_RESTAPI.config;
 
+import br.newtonpaiva.JWT_Security_RESTAPI.service.CustomUserDetailService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -14,6 +17,10 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class AuthConfig {
 
+
+    @Autowired
+    private CustomUserDetailService userDetailsService;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -24,31 +31,20 @@ public class AuthConfig {
                         .antMatchers(HttpMethod.GET, "/auth/username/**").permitAll()
                         .antMatchers(HttpMethod.GET, "/auth/user/**").permitAll()
                         .antMatchers("/auth/admin/**").hasRole("ADMIN")
-                        .antMatchers(HttpMethod.PUT, "/auth/edit/**").hasRole("ADMIN")
-                        .antMatchers(HttpMethod.DELETE, "/auth/delete/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
-                .httpBasic();
+                .httpBasic(); // ou .formLogin() se preferir
         return http.build();
-    }
-
-    @Bean
-    public InMemoryUserDetailsManager userDetailsService() {
-        var user = org.springframework.security.core.userdetails.User.withUsername("arthur")
-                .password(passwordEncoder().encode("1234"))
-                .roles("USER")
-                .build();
-
-        var admin = org.springframework.security.core.userdetails.User.withUsername("admin")
-                .password(passwordEncoder().encode("1234"))
-                .roles("ADMIN")
-                .build();
-
-        return new InMemoryUserDetailsManager(user, admin);
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+    }
 }
+

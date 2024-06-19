@@ -1,3 +1,4 @@
+
 package br.newtonpaiva.JWT_Security_RESTAPI.service;
 
 import br.newtonpaiva.JWT_Security_RESTAPI.model.LoginRequest;
