@@ -110,7 +110,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 </ul>
 <img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Username.png?raw=true" width="800px" height="260px"/>
 <p>Para as rotas de edição e exclusão é necessário entrar na aba de Auth types do insomnia e selecionar Basic Auth e inserir o usuário e senha </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Authorization.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Authorization.png?raw=true" width="800px" height="260px"/>
 <h3>Editar Usuário</h3>
 <ul>
   <li>Método: PUT</li>
@@ -133,6 +133,9 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 Restrições de Roles
 ADMIN: Tem acesso a todas as rotas, incluindo edição (/auth/edit/{id}) e exclusão (/auth/delete/{id}) de usuários.
 USER: Acesso limitado apenas às rotas públicas e suas próprias informações.
+
+<h1>Diagrama</h1>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Captura%20de%20tela%202024-06-19%20174954.png?raw=true" width="1335px" height="724px"/>
 
 
 
