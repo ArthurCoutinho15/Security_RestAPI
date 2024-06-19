@@ -45,7 +45,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 Interface: SecurityRepository
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="720px" height="280px"/>
 
 <h2>5. JwtFilter</h2> 
 <p>Filtro JWT para interceptar requisições HTTP e validar tokens JWT.</p> 
@@ -92,7 +92,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Registra um novo usuário.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="800px" height="260px"/>
 <h3>Login</h3>
 <ul>
   <li>Método: POST</li>
@@ -100,7 +100,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Autentica um usuário e retorna um token JWT.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Login.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Login.png?raw=true" width="800px" height="260px"/>
 <h3>Obter Usuário por Username</h3>
 <ul>
   <li>Método: GET</li>
