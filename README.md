@@ -102,7 +102,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Descrição: Retorna os detalhes de um usuário pelo username.</li>
 </ul>
 <h3>Editar Usuário</h3>
-<p>Para essa rota é necessário </p>
+<p>Para essa rota é necessário entrar na aba de Auth types do insomnia e selecionar API key </p>
 <ul>
   <li>Método: PUT</li>
   <li>URL: http://localhost:8080/auth/edit/{id}</li>
