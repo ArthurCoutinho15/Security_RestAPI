@@ -44,6 +44,43 @@ Interface: SecurityRepository
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 </p>
 
+<h2>5. JwtFilter</h2> 
+<p>Filtro JWT para interceptar requisições HTTP e validar tokens JWT.</p> 
+<p>
+Classe: JwtFilter
+Pacote: br.newtonpaiva.JWT_Security_RESTAPI.security
+</p>
+
+<h2>6. JwtUtil</h2> 
+<p>
+Utilitário para geração e validação de tokens JWT.</p> 
+<p>
+Classe: JwtUtil
+Pacote: br.newtonpaiva.JWT_Security_RESTAPI.security
+</p>
+
+<h2>7. AuthService</h2> 
+<p>
+Serviço para autenticação e autorização de usuários.</p> 
+<p>
+Classe: AuthService
+Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
+</p>
+<h2>Principais Métodos:</h2>
+  <ul>
+    <li>generateToken(String username, String role): Gera um token JWT.</li>
+    <li>extractUsername(String token): Extrai o username do token.</li>
+    <li>extractUserRole(String token): Extrai a role do usuário do token.</li>
+    <li>authenticateUser(String username, String password): Autentica o usuário e retorna um token JWT.</li>
+    <li>saveUser(LoginRequest user): Salva um usuário no banco de dados.</li>
+    <li>findByUsername(String username): Busca um usuário pelo username.</li>
+    <li></li>validateToken(String token, UserDetails userDetails): Valida o token JWT.</li>
+  </ul>
+
+
+
+
+
 
 
 
