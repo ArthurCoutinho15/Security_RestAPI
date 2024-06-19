@@ -45,7 +45,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 Interface: SecurityRepository
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="500px" height="500px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="800px" height="500px"/>
 
 <h2>5. JwtFilter</h2> 
 <p>Filtro JWT para interceptar requisições HTTP e validar tokens JWT.</p> 
@@ -92,7 +92,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Registra um novo usuário.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="400px" height="400px"/>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="800px" height="600px"/>
 
 
 <h3>Login</h3>
