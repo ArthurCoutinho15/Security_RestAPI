@@ -12,7 +12,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.config
 <h2>Principais Métodos:</h2>
   <ul>
     <li>securityFilterChain(HttpSecurity http): Configura a segurança HTTP, definindo as permissões das rotas.</li>
-    <li>userDetailsService(): Gerencia os detalhes dos usuários em memória..</li>
+    <li>userDetailsService(): Gerencia os detalhes dos usuários em memória.</li>
     <li>passwordEncoder(): Configura o codificador de senha BCrypt.</li>
   </ul>
 
