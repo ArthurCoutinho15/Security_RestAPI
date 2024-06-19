@@ -24,6 +24,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.config
 Classe: AuthController
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.controller
 </p>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/AuthController.png?raw=true" width="800px" height="600px"/>
 <h2>Principais Métodos:</h2>
   <ul>
     <li>register(LoginRequest user): Registra um novo usuário.</li>
@@ -44,6 +45,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 Interface: SecurityRepository
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 </p>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/SecurityRepository.png?raw=true" width="800px" height="600px"/>
 
 <h2>5. JwtFilter</h2> 
 <p>Filtro JWT para interceptar requisições HTTP e validar tokens JWT.</p> 
@@ -51,6 +53,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.repository
 Classe: JwtFilter
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.security
 </p>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/JwtFilter.png?raw=true" width="800px" height="600px"/>
 
 <h2>6. JwtUtil</h2> 
 <p>
@@ -59,6 +62,7 @@ Utilitário para geração e validação de tokens JWT.</p>
 Classe: JwtUtil
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.security
 </p>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/JwtUtil.png?raw=true" width="800px" height="600px"/>
 
 <h2>7. AuthService</h2> 
 <p>
@@ -67,6 +71,8 @@ Serviço para autenticação e autorização de usuários.</p>
 Classe: AuthService
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 </p>
+<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/JwtUtil.png?raw=true" width="800px" height="600px"/>
+
 <h2>Principais Métodos:</h2>
   <ul>
     <li>generateToken(String username, String role): Gera um token JWT.</li>
