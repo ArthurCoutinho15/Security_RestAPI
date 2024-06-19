@@ -74,8 +74,23 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
     <li>authenticateUser(String username, String password): Autentica o usuário e retorna um token JWT.</li>
     <li>saveUser(LoginRequest user): Salva um usuário no banco de dados.</li>
     <li>findByUsername(String username): Busca um usuário pelo username.</li>
-    <li></li>validateToken(String token, UserDetails userDetails): Valida o token JWT.</li>
+    <li>validateToken(String token, UserDetails userDetails): Valida o token JWT.</li>
   </ul>
+
+<h1>Executando Projeto</h1>
+<p>Utilizando o insomnia crie uma nova requisição</p>
+<h2>Rotas</h2>
+<h3>Registro de Usuário</h3>
+<ul>
+  <li>Método: POST</li>
+  <li>URL: https/auth/register</li>
+  <li>Permissões: Público</li>
+  <li>Descrição: Registra um novo usuário.</li>
+</ul>
+
+
+
+
 
 
 
